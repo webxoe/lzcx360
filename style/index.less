@@ -73,4 +73,63 @@
 .ems a:active{
 
  }
-.ems div[class^='']
+.ems div[class^='col-']{
+  padding: 20px;
+}
+.si_box{
+  background-color: #383d41;
+  height: 420px;
+}
+.si_box li{
+  width: 20%;
+  float: left;
+}
+ol[class='container-fluid']{
+  width: 90%;
+}
+.classicCase div[class^='col-']{
+  padding: 20px;
+}
+.classicCase div[class^='col-'] a{
+  //display: inline-block;
+}
+.classicCase div[class^='col-'] img:hover{
+  .ly_transform_scale(1.1,1.2);
+}
+#footerbox{
+  background: #2f3034;
+  width: 100%;
+  color: #999;
+  padding: 50px 0;
+}
+#footerbox dt{
+  font-size: 30px;
+  color: #d7d8d9;
+  line-height: 60px;
+  font-weight: bold;
+}
+#footerbox dd{
+  line-height: 40px;
+}
+#footerbox .container:nth-child(2){
+  border-top: 1px solid #c0a16b;
+  padding-top: 30px;
+}
+
+.ly_transform_scale(@x,@y){
+  -webkit-transform: scale(@x,@y);
+  -moz-transform: scale(@x,@y);
+  -ms-transform: scale(@x,@y);
+  -o-transform: scale(@x,@y);
+  transform: scale(@x,@y);
+}
+.ly_keyframes(@name){
+  @keyframes @name{
+    
+  }
+}
+.ly_animation(@funname,@time){
+  -webkit-animation: @funname @time;
+  -o-animation: @funname @time;
+  animation: @funname @time;
+}

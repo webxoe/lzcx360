@@ -62,3 +62,46 @@
 .ems a:hover {
   background-color: #c2ddf3;
 }
+.ems div[class^='col-'] {
+  padding: 20px;
+}
+.si_box {
+  background-color: #383d41;
+  height: 420px;
+}
+.si_box li {
+  width: 20%;
+  float: left;
+}
+ol[class='container-fluid'] {
+  width: 90%;
+}
+.classicCase div[class^='col-'] {
+  padding: 20px;
+}
+.classicCase div[class^='col-'] img:hover {
+  -webkit-transform: scale(1.1, 1.2);
+  -moz-transform: scale(1.1, 1.2);
+  -ms-transform: scale(1.1, 1.2);
+  -o-transform: scale(1.1, 1.2);
+  transform: scale(1.1, 1.2);
+}
+#footerbox {
+  background: #2f3034;
+  width: 100%;
+  color: #999;
+  padding: 50px 0;
+}
+#footerbox dt {
+  font-size: 30px;
+  color: #d7d8d9;
+  line-height: 60px;
+  font-weight: bold;
+}
+#footerbox dd {
+  line-height: 40px;
+}
+#footerbox .container:nth-child(2) {
+  border-top: 1px solid #c0a16b;
+  padding-top: 30px;
+}

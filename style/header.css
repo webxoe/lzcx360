@@ -1,0 +1,56 @@
+.nav > li {
+    position: static;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.prodcts:hover .menuNav {
+    height: 510px;
+    transition: all 1s ease-in-out;
+}
+
+.menuNav {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 11;
+}
+
+.menuContext {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.menuContext div[class^='col-'] {
+    margin-top: 50px;
+}
+
+.menuContext a {
+    display: block;
+    background-color: #3e4348;
+    line-height: 20px;
+    padding: 20px;
+    color: #8d8e8e;
+}
+
+.menuContext a:hover {
+    background-color: #0994d7;
+    color: #fff;
+}
+
+.menuBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #000;
+    opacity: 0.8;
+}

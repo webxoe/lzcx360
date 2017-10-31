@@ -1,0 +1,63 @@
+
+.rightIco {
+    position: fixed;
+    right: 20px;
+    top: 30px;
+    /*transform: translateY(100%);*/
+}
+
+.rightIco li {
+    background: url("../images/rightIco.png");
+    width: 40px;
+    height: 40px;
+    list-style: none;
+    cursor: pointer;
+    margin: 10px 0;
+    position: relative;
+}
+
+.rightIco li p {
+    overflow: hidden;
+    width: 0;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    background-color: #fff;
+    border-left: 0px solid #0098e0;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
+
+.rightIco li:hover p {
+    width: 200px;
+    border: 1px solid #dcdcdc;
+    border-left: 5px solid #0098e0;
+}
+
+.rightIco .rightIco2 {
+    background-position: 0 -45px;
+}
+
+.rightIco .rightIco3 {
+    background-position: 0 -90px;
+}
+
+.rightIco .rightIco4 {
+    background-position: 0 -135px;
+}
+
+.rightIco .rightIco6 {
+    background-position: 0 -225px;
+}
+
+.rightIco li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.rightIco li:hover {
+    background-image: url("../images/rightIco_hover.png");
+}

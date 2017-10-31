@@ -1,5 +1,6 @@
-function add(a, b) {
-    return a + b;
-}
-
-add(10, 20);
+define(function () {
+    function fun1() {
+        alert('it is work');
+    }
+    fun1();
+})

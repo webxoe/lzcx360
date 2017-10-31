@@ -1,33 +1,39 @@
-#banner{
+#banner {
   height: 560px;
   width: 100%;
   padding: 0;
 }
-.logo img{
+
+.logo img {
   height: 30px;
 }
+
 .swiper-container {
   width: 100%;
   height: 100%;
   background: #000;
 }
+
 .swiper-slide {
   font-size: 18px;
-  color:#fff;
+  color: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 60px;
 }
 
-.swiper-slide:nth-child(1){
+.swiper-slide:nth-child(1) {
   background: url("../images/banner1.jpg");
 }
-.swiper-slide:nth-child(2){
+
+.swiper-slide:nth-child(2) {
   background: url("../images/banner2.jpg");
 }
-.swiper-slide:nth-child(3){
+
+.swiper-slide:nth-child(3) {
   background: url("../images/banner3.jpg");
 }
+
 .parallax-bg {
   position: absolute;
   left: 0;
@@ -38,98 +44,176 @@
   background-size: cover;
   background-position: center;
 }
+
 .swiper-slide .title {
   padding-top: 130px;
   font-size: 41px;
   font-weight: 300;
 }
+
 .swiper-slide .subtitle {
   font-size: 21px;
 }
+
 .swiper-slide .text {
   font-size: 14px;
   max-width: 400px;
   line-height: 1.3;
 }
-.ems a{
+
+.ems a {
   display: block;
   background-color: #f6f6f6;
   padding: 20px;
   text-decoration: none;
 }
-.ems p{
+
+.ems p[class*='lead'] {
   text-indent: 2em;
+  -webkit-animation: LeftToRight 0.5s ease-out;
+  -o-animation: LeftToRight 0.5s ease-out;
+  animation: LeftToRight 0.5s ease-out;
 }
 
-.ems a:link{
+.ems h2 {
+  -webkit-animation: RightToLeft 0.5s ease-out;
+  -o-animation: RightToLeft 0.5s ease-out;
+  animation: RightToLeft 0.5s ease-out;
+}
+
+.ems a:link {
 
 }
-.ems a:visited{
+
+.ems a:visited {
 
 }
-.ems a:hover{
+
+.ems a:hover {
   background-color: #c2ddf3;
 }
-.ems a:active{
 
- }
-.ems div[class^='col-']{
+.ems a:active {
+
+}
+
+.ems div[class^='col-'] {
   padding: 20px;
 }
-.si_box{
+
+.si_box {
   background-color: #383d41;
   height: 420px;
 }
-.si_box li{
+
+.si_box li {
   width: 20%;
   float: left;
 }
-ol[class='container-fluid']{
+
+ol[class='container-fluid'] {
   width: 90%;
 }
-.classicCase div[class^='col-']{
+
+.classicCase div[class^='col-'] {
   padding: 20px;
 }
-.classicCase div[class^='col-'] a{
+
+.classicCase div[class^='col-'] a {
   //display: inline-block;
 }
-.classicCase div[class^='col-'] img:hover{
-  .ly_transform_scale(1.1,1.2);
+
+.classicCase div[class^='col-'] img:hover {
+  transform: scale(1.1, 1.1);
 }
-#footerbox{
+
+#footerbox {
   background: #2f3034;
   width: 100%;
   color: #999;
   padding: 50px 0;
 }
-#footerbox dt{
+
+#footerbox dt {
   font-size: 30px;
   color: #d7d8d9;
   line-height: 60px;
   font-weight: bold;
 }
-#footerbox dd{
+
+#footerbox dd {
   line-height: 40px;
 }
-#footerbox .container:nth-child(2){
+
+#footerbox .container:nth-child(2) {
   border-top: 1px solid #c0a16b;
   padding-top: 30px;
 }
 
-.ly_transform_scale(@x,@y){
-  -webkit-transform: scale(@x,@y);
-  -moz-transform: scale(@x,@y);
-  -ms-transform: scale(@x,@y);
-  -o-transform: scale(@x,@y);
-  transform: scale(@x,@y);
-}
-.ly_keyframes(@name){
-  @keyframes @name{
-
+.LeftToRight() {
+  0% {
+    transform: translate(-100px)
+  }
+  25% {
+    transform: translate(-75px)
+  }
+  50% {
+    transform: translate(-50px)
+  }
+  75% {
+    transform: translate(-25px)
+  }
+  100% {
+    transform: translate(0px)
   }
 }
-.ly_animation(@funname,@time){
-  -webkit-animation: @funname @time;
-  -o-animation: @funname @time;
-  animation: @funname @time;
+
+@-webkit-keyframes LeftToRight {
+  .LeftToRight();
+}
+
+@-moz-keyframes LeftToRight {
+  .LeftToRight();
+}
+
+@-ms-keyframes LeftToRight {
+  .LeftToRight();
+}
+
+@keyframes LeftToRight {
+  .LeftToRight();
+}
+
+.RightToLeft() {
+  0% {
+    transform: translate(100px)
+  }
+  25% {
+    transform: translate(75px)
+  }
+  50% {
+    transform: translate(50px)
+  }
+  75% {
+    transform: translate(25px)
+  }
+  100% {
+    transform: translate(0px)
+  }
+}
+
+@-webkit-keyframes RightToLeft {
+  .RightToLeft();
+}
+
+@-moz-keyframes RightToLeft {
+  .RightToLeft();
+}
+
+@-ms-keyframes RightToLeft {
+  .RightToLeft();
+}
+
+@keyframes RightToLeft {
+  .RightToLeft();
 }
